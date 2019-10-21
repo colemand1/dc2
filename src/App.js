@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Top from './Component/Top';
+import Main from './Containers/Main';
+import About from './Containers/About';
+import Contact from './Containers/Contact';
+import Portfolio from './Containers/Portfolio';
+import Fun from './Containers/Fun';
+import Jumbo from './Component/Jumbo';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Top />
+      <Main />
+      <Jumbo name='Cincinnati' />
+      <About />
+      <Portfolio />
+      <Jumbo name='Chicago' />
+      <Fun />
+      <Contact />
     </div>
   );
 }
